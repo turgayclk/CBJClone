@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
-using Unity.Android.Gradle.Manifest;
 using UnityEngine;
-
 public class GridManager : MonoBehaviour
 {
     [Header("Level Data")]
