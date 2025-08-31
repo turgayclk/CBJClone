@@ -5,7 +5,7 @@
 The game mechanics are inspired by **Color Block Jam**, developed by the innovative mobile game studio **Gybe Games** and published by **Rollic**. We sincerely thank Gybe Games and Rollic for their creativity and inspiration. 🙌  
 
 🎮 **Try it quickly here:**  
-👉 [Unity Play Link](https://play.unity.com/en/games/379b35bc-1a0e-4150-8f6c-53e19ee6579a/cut-the-vegetables)  
+👉 [Unity Play Link]([https://play.unity.com/en/games/379b35bc-1a0e-4150-8f6c-53e19ee6579a/cut-the-vegetables](https://play.unity.com/en/games/379b35bc-1a0e-4150-8f6c-53e19ee6579a/cut-the-vegetables))  
 
 ---
 
