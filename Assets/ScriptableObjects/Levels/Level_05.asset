@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df8a37efb8cd842429475b221c82f322, type: 3}
+  m_Name: Level_05
+  m_EditorClassIdentifier: 
+  width: 6
+  height: 6
+  blocks:
+  - position: {x: 2, y: 4}
+    size: {x: 1, y: 1}
+    color: {r: 1, g: 0.44031492, b: 0, a: 0}
+    prefab: {fileID: 3924780171619709074, guid: 83c5f499bf02b8448ae03e25d4636031, type: 3}
+  - position: {x: 1, y: 3}
+    size: {x: 2, y: 2}
+    color: {r: 0.11372549, g: 0.85882354, b: 0, a: 0}
+    prefab: {fileID: 3924780171619709074, guid: 123e3abda7dfcc34faef0410a79ab9d1, type: 3}
+  - position: {x: 4, y: 4}
+    size: {x: 1, y: 1}
+    color: {r: 0.7529412, g: 0.78431374, b: 0.0627451, a: 0}
+    prefab: {fileID: 3924780171619709074, guid: 34a85548516923a4f820360a3de238c6, type: 3}
+  - position: {x: 4, y: 1}
+    size: {x: 1, y: 1}
+    color: {r: 1, g: 0.019607844, b: 0, a: 0}
+    prefab: {fileID: 3924780171619709074, guid: 80bfd3e720fff8449befb260a23fa51d, type: 3}
+  - position: {x: 1, y: 1}
+    size: {x: 1, y: 1}
+    color: {r: 0.90588236, g: 0.49019608, b: 0.23921569, a: 0}
+    prefab: {fileID: 3924780171619709074, guid: 775fd4b20803e3f44a2e87c73dbd19ab, type: 3}
+  - position: {x: 2, y: 1}
+    size: {x: 1, y: 1}
+    color: {r: 0.754717, g: 0.0035599943, b: 0.41269705, a: 0}
+    prefab: {fileID: 3924780171619709074, guid: 85b280f5aa65a3a4193cd9b9a8b3b25d, type: 3}
+  gates:
+  - position: {x: 2, y: 0}
+    size: {x: 1, y: 1}
+    color: {r: 1, g: 0.4392157, b: 0, a: 0}
+  - position: {x: 5, y: 1}
+    size: {x: 1, y: 1}
+    color: {r: 0.7529412, g: 0.78431374, b: 0.0627451, a: 0}
+  - position: {x: 5, y: 3}
+    size: {x: 1, y: 2}
+    color: {r: 0.11372549, g: 0.85882354, b: 0, a: 0}
+  - position: {x: 0, y: 4}
+    size: {x: 1, y: 1}
+    color: {r: 1, g: 0.019607844, b: 0, a: 0}
+  - position: {x: 4, y: 5}
+    size: {x: 1, y: 1}
+    color: {r: 0.90588236, g: 0.49019608, b: 0.23921569, a: 0}
+  - position: {x: 2, y: 5}
+    size: {x: 1, y: 1}
+    color: {r: 0.7529412, g: 0.003921569, b: 0.4117647, a: 0}
