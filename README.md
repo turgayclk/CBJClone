@@ -20,11 +20,11 @@ Oyun mekanikleri, mobil oyun dünyasının en başarılı ve yenilikçi stüdyol
 ## 📸 Screenshots  
 
 <p align="center">
-  <img src="Assets/Screenshots/screenshot1.jpg" width="200"/>
-  <img src="Assets/Screenshots/screenshot2.jpg" width="200"/>
-  <img src="Assets/Screenshots/screenshot3.jpg" width="200"/>
-  <img src="Assets/Screenshots/screenshot4.jpg" width="200"/>
-  <img src="Assets/Screenshots/screenshot5.jpg" width="200"/>
+  <img src="Assets/Screenshots/screenshot1.jpg" width="150"/>
+  <img src="Assets/Screenshots/screenshot2.jpg" width="150"/>
+  <img src="Assets/Screenshots/screenshot3.jpg" width="150"/>
+  <img src="Assets/Screenshots/screenshot4.jpg" width="150"/>
+  <img src="Assets/Screenshots/screenshot5.jpg" width="150"/>
 </p>  
 
 ---
