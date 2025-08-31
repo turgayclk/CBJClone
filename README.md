@@ -14,6 +14,7 @@ Oyun mekanikleri, mobil oyun dünyasının en başarılı ve yenilikçi stüdyol
 - 🥗 Amacınız: Sebzeleri (domates, havuç, patates, balkabağı, kırmızı lahana, salatalık vb.) sıkışıklıklardan kurtararak aynı renkteki doğrama tahtasına ulaştırmak.  
 - ⏱️ Süre: Her levelde **30 saniye** içerisinde tüm sebzeleri doğru tahtalara yönlendirin.  
 - 🔪 Animasyon: Doğru tahtaya ulaşan sebzeler, mutfak bıçağı animasyonu ile doğranarak görsel bir tatmin sağlar.  
+- 📦 Şimdilik oyun toplamda **5 level** içeriyor. Bu, oyunun temel mekaniklerini tanımanız için yeterli kısa bir deneyim sunuyor. 🚀  
 
 ---
 
