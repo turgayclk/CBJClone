@@ -22,6 +22,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject failUI;
     [SerializeField] private TextMeshProUGUI levelText;
     [SerializeField] private GameObject levelCompleteUI;
+    [SerializeField] private GameObject gameOverUI;
     [SerializeField] private GameObject TimerUI;
     [SerializeField] private Button nextLevelButton; // butonu inspector’dan baðla
 
@@ -134,6 +135,13 @@ public class GameManager : MonoBehaviour
         LevelCompleted();
     }
 
+    private IEnumerator ShowNextLevelButtonWithDelay(float delay)
+    {
+        nextLevelButton.gameObject.SetActive(false); // güvenlik için kapalý tut
+        yield return new WaitForSeconds(delay);
+        nextLevelButton.gameObject.SetActive(true);
+    }
+
     private void LevelCompleted()
     {
         if (isLevelCompleted || !isTimerRunning) return;
@@ -146,6 +154,9 @@ public class GameManager : MonoBehaviour
 
         Debug.Log("Level Tamamlandý!");
         levelCompleteUI.SetActive(true);
+
+        // Sonra butonu 1 saniye gecikmeli aç
+        StartCoroutine(ShowNextLevelButtonWithDelay(1f));
 
         foreach (var confetti in confettiSystem)
         {
@@ -183,7 +194,43 @@ public class GameManager : MonoBehaviour
         else
         {
             Debug.Log("Tüm leveller bitti!");
+
+            levelCompleteUI.SetActive(false);
+
+            gameOverUI.SetActive(true);
         }
+    }
+
+    public void StartAgainButton()
+    {
+        Debug.Log("Oyuna yeniden baþlandý!");
+
+        // GameOver ekranýný kapat
+        gameOverUI.SetActive(false);
+
+        // Confetti’leri durdur
+        foreach (var confetti in confettiSystem)
+        {
+            confetti.Stop(true, ParticleSystemStopBehavior.StopEmittingAndClear);
+        }
+
+        // Ýlk leveli yükle
+        currentLevelIndex = 0;
+        LoadLevel(currentLevelIndex);
+
+        // Grid’i yeniden aktif et
+        gridManager.gameObject.SetActive(true);
+
+        // UI resetle
+        levelCompleteUI.SetActive(false);
+        failUI.SetActive(false);
+        TimerUI.SetActive(true);
+
+        // Timer sýfýrla
+        remainingTime = levelTime;
+        isTimerRunning = true;
+        isLevelCompleted = false;
+        isTransitioning = false;
     }
 
     private IEnumerator ReenableCheck()
