@@ -16,19 +16,21 @@ public class CameraController : MonoBehaviour
     private void OnEnable()
     {
         GameManager.AddCameraCenterPos += SetCenterCamera;
+        GameManager.ResetCameraPos += SetStartCenterCamera;
     }
 
     private void OnDisable()
     {
         GameManager.AddCameraCenterPos -= SetCenterCamera;
+        GameManager.ResetCameraPos -= SetStartCenterCamera;
     }
 
     private void SetStartCenterCamera()
     {
         // Start kamera pozisyonu
-        float posX = baseX;
-        float posY = baseY; 
-        float posZ = baseZ;
+        float posX = 2f;
+        float posY = 2.5f; 
+        float posZ = -12f;
 
         transform.position = new Vector3(posX, posY, posZ);
     }

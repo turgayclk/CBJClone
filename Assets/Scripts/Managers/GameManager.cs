@@ -27,6 +27,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Button nextLevelButton; // butonu inspector’dan baðla
 
     public static event System.Action AddCameraCenterPos;
+    public static event System.Action ResetCameraPos;
 
     private bool isLevelCompleted = false;
     private int currentLevelIndex = 0;
@@ -204,6 +205,8 @@ public class GameManager : MonoBehaviour
     public void StartAgainButton()
     {
         Debug.Log("Oyuna yeniden baþlandý!");
+
+        ResetCameraPos?.Invoke();
 
         // GameOver ekranýný kapat
         gameOverUI.SetActive(false);
